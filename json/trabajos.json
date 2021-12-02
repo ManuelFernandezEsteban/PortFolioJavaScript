@@ -1,0 +1,80 @@
+[
+    {
+        "id":"peluqueria",       
+        "trabajo": "portafolioPeluqueria",
+        "nombre":"Peluquería y estética Isabel",
+        "descripcion":"Mi primer trabajo \"profesional\", diseño completo movil-first, sentando las bases para el posicionamiento SEO, uso de las API's de GoogleMaps para el mapa de donde estamos.",
+        "fotos": [
+            {
+                "id": 0,
+                "src": "img/peluqueria-donde-1200.PNG",
+                "titulo": "Donde estamos",
+                "descripcion": "Pantalla donde estamos, maquetado con flex y uso de al libreria Google Maps"
+            },
+            {
+                "id": 1,
+                "src": "img/peluqueria-home-1024.PNG",
+                "titulo": "Home",
+                "descripcion": "Pantalla home, menu sticky-bar a lo largo de la imagen central"
+            },
+            {
+                "id": 2,
+                "src": "img/peluqueria-home-1200.PNG",
+                "titulo": "Home",
+                "descripcion": "Pantalla home, detalle de cajas maquetadas con flex"
+            }
+        ]
+    },
+    {
+        "id":"offbeat",
+        "trabajo": "portafolioOffbeat",
+        "nombre":"OffBeat Fotovisuales",
+        "descripcion":"Mi segundo trabajo \"profesional\", deuda pendiente por fin resuelta, diseño pensado para desktop, ya que es en una pantalla grande donde podemos apreciar el trabajo realizado por los fotógrafos. En este trabajo nace la idea de usar un slider para ver imagenes sin usar Javascript. También aquí se tienen muy encuenta la base para el posicionamiento SEO.",
+        "fotos": [
+            {
+                "id": 0,
+                "src": "img/offbeat-home.PNG",
+                "titulo": "Home",
+                "descripcion": "Pantalla home, maquetado con flex"
+            },
+            {
+                "id": 1,
+                "src": "img/offbeat-galeria.PNG",
+                "titulo": "Galería",
+                "descripcion": "Pantalla galería, galería dinámica implementada mediante HTML y CSS"
+            },
+            {
+                "id": 2,
+                "src": "img/offbeat-contacto.PNG",
+                "titulo": "Contacto",
+                "descripcion": "Pantalla contacto, enlaces de iconos a descarga de archivos y enlaces externos"
+            }
+        ]
+    },
+    {
+        "id":"componentes",
+        "trabajo": "componentesycards",
+        "nombre":"Componentes y Cards",
+        "descripcion":"Estas cards y componentes son pequeñas practicas que he ido realizando, tomo el diseño de Front Mentor y luego las codifico usando HTML, CSS y JavaScript",
+        "fotos": [
+            {
+                "id": 0,
+                "src": "img/screenshoot-preview-card.png",
+                "titulo": "Card preview",
+                "descripcion": "Card realizada con HTML5, CSS3 y flex"
+            },
+            {
+                "id": 1,
+                "src": "img/screenshot-desktop-accordion.png",
+                "titulo": "Componente acordeón",
+                "descripcion": "Componente implementado con HTML5, CSS3 y JavaScript"
+            },
+            {
+                "id": 2,
+                "src": "img/screenshotOrderSummaryCard.png",
+                "titulo": "Card summary",
+                "descripcion": "Card maquetada con flexbox"
+            }
+        ]
+    }
+]

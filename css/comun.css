@@ -1,0 +1,721 @@
+/*Estilos comunes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&family=Tillana:wght@400;800&family=Ubuntu&display=swap');
+
+/* inicio estilos aside*/
+.noticias{
+    border: 2px solid black;              
+    order: 2;  
+    width: 30px;
+    background-color:black;        
+    color: white;
+    height: auto;  
+}
+.contenido-caja-noticia{
+    padding: 5px;
+    font-family: 'Ubuntu';    
+}   
+.contenido-caja-noticia a{
+    color: white;
+}
+.contenido-caja-noticia a:visited{
+    color: white;
+}
+.separador
+{
+    border: 0.3px solid white; 
+    margin: 5px;
+}
+
+.caja-disparador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+.caja-disparador p{
+    position:sticky;    
+    top: 50%; 
+    right: 10px;   
+    transform: rotate(270deg); 
+    align-self: center; 
+    padding: 10px;  
+}
+.caja-disparador p:hover{
+    cursor: pointer;
+    display: block;
+}
+
+#cajaNoticias{
+    display: none;      
+        
+}
+
+/*fin aside noticias*/
+/*estilos contenedor principal*/
+.contenedor-secundario{
+    flex:4;
+}
+header{
+    background-color: black;    
+    width: 100%;  
+    position: sticky;
+    top:0; 
+    z-index: 2;
+}
+main{
+    display: flex;
+    flex-direction: row;    
+}
+/*menu responsive*/
+#opcion{
+    color: white;
+    align-self:flex-end;
+}
+.menuresponsive{
+    display: block;
+}
+.menuresponsive nav{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.menuresponsive a { 
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    font-family: 'Ubuntu';    
+    background: black;
+}
+
+.espacio{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    font-family: 'Ubuntu';
+    background: black;
+}
+.menuresponsive input[type="checkbox"], .menuresponsive .barras, .menuresponsive .cruz {
+    position: absolute;  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+}
+ul{
+    list-style-type: none;
+}
+   
+.menuresponsive .barras, .menuresponsive .cruz {
+    font-size: 40px;
+    pointer-events: none;
+}
+   
+.menuresponsive input[type="checkbox"] {
+    opacity: 0; 
+}
+   
+.menuresponsive {
+    color: white;
+    position: relative; 
+    background: black;
+    min-height: 48px;
+    margin-right: 5px;
+    
+}  
+.menuresponsive input:checked ~ nav {
+    display: block;
+}
+   
+.menuresponsive input:checked ~ .barras {
+    display: none;
+}
+   
+.menuresponsive input:not(:checked) ~ .cruz {
+    display: none;
+}
+
+/*fin menu responsive*/
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Teko';
+}
+h3{
+    font-size: 1.8em;
+}
+h1{
+    font-size: 3.5em;
+    font-weight: bolder;
+    padding: 20px; 
+}
+h2{
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 20px;
+}
+label{
+    font-family: Ubuntu;
+}
+p{
+    font-family: Ubuntu;
+    font-size: 1em;
+    padding: 10px;
+    line-height: 1.7;
+}
+html{
+    min-height: 100%;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+
+.contenedor-global{
+    min-height: 100%;
+    position: relative;    
+}
+
+.proyector{
+    display: none;
+}
+.bienvenida{
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;      
+}
+
+.trabajos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.miniatura-bienvenida{
+    margin: auto;
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 10%;  
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.blanco {
+    color: white;
+}
+.caja-logo{       
+    display: inline-block;   
+    width: auto;
+    height: 50px;
+    padding: 10px;
+    background-color: black;    
+}
+.caja-logo h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+.caja-logo a{
+    text-decoration: none;
+    color: white    
+}
+/*fin estilos menu*/
+/*estilos home*/
+.contenido{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;    
+    
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.caja-contenido{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+img{
+    padding: 0%;
+    width: 100%;   
+    margin: auto;
+}
+
+.nodecoracion{
+    color: black;
+    text-decoration: none;
+}
+/*fin estilos home*/
+/*inicio estilos portfolio*/
+.portfolio{
+    flex-flow: column;
+    display: flex;        
+    justify-content: flex-start;    
+    margin: auto;    
+}
+.caja-portfolio{
+    display: flex;
+    flex-flow: column;    
+}
+
+.resumen-trabajo{
+    flex: 2;    
+}
+/*estilos galeria dinámica*/
+
+.trabajo{
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    flex: 1;    
+    align-items: center;
+    
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+.galeria {
+    background: #f2f2f2;    
+    display: flex;
+    flex: 2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    object-fit:cover;   
+    width: 50%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.img-galeria:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 5%;
+    left: 0;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .3s ease-in-out;
+    z-index: 1;
+}
+.agregar-texto p{
+    font-family: 'Ubuntu';
+    font-size: 1em;     
+}
+.agregar-texto h1{
+    font-size: 2.5em;
+    font-family: 'Teko';
+}
+.container{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-texto {   
+    align-self: center;
+    padding-top: 20px;    
+    transition: transform .4s .3s;
+}
+.imagenGaleria{
+    object-fit: cover;
+    width: 100%;     
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .4s .3s;
+}
+.showImage{
+    transform: scale(1);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+    color:black;
+    font-size: 25px;
+}
+/*fin estilos galeria dinamica*/
+/*fin estilos portfolio*/
+/*inicio estilos contacto*/
+
+.contenedor-contacto{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+img.icono{
+    width: 32px;
+}
+.general{
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;    
+    flex-grow: 4;
+}
+.contacto{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    
+}
+
+.contacto a{
+    color: black;
+    
+}
+.boton{
+    background-color: black;
+    color: white;
+    font-family: 'Tillana';
+    border-radius: 0;
+    border: 0;
+    
+}
+.botones{        
+    padding: 5%;
+}
+
+.input-formulario{
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: Ubuntu;
+}
+
+.contenedor-formulario-contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#mapa{
+    /*position: relative;*/
+    width: 100%;
+    height: 600px;
+}
+#ruta{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+/*fin estilos contacto*/
+/*inicio estilos presupuesto*/
+.contenedor-presupuesto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.caja-formulario{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 100px;
+   
+}
+.caja-formulario:nth-of-type(4){
+    flex: 2;
+}
+.input-formulario{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: Ubuntu;
+}
+.presupuesto{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+legend{
+    font-family: 'Teko';
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/*fin estilos presupuesto*/
+
+
+/*bienvenida*/
+
+.bandaSuperior{
+    background-color: black;
+    width: 100%;
+    min-height: 40px;
+}
+.caja-bienvenida{        
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;   
+}
+
+.pop-up{
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+
+.contenido-popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-popup h3{
+    padding-top: 20px;
+}
+
+.contenedor-popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-bienvenida{
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    align-self: flex-end;
+}
+/*fin caja bienvenida*/
+
+
+/*media querys*/
+/*tamaño ipad*/
+@media only screen and (min-width:768px){
+
+    .imagenGaleria{
+        width: 100%;
+    }
+    .contenedor-galeria{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-galeria {
+        width: 60%;
+    }
+    /*.galeria{
+        height: 800px;
+    }*/
+    .noticias{
+       /* flex-grow:4;*/
+        width: 50px;        
+    }
+
+    .miniatura-bienvenida{
+        margin: auto;
+        width: 85%;
+    }
+    .bienvenida{        
+        flex-direction: column;
+              
+    }
+    .bienvenida p{
+        padding: 30px;
+    }
+    .visor{
+        display: none;
+    }
+    .caja-formulario{        
+        flex-flow: row nowrap;       
+    }
+    .input-formulario{
+        width: 100%;
+    }
+}   
+
+
+/*tamaño laptop*/
+@media only screen and (min-width:1024px){
+
+    .trabajo{
+        flex-direction: row;
+    }
+
+    #opcion{
+        display: none;
+    }
+    .noticias{
+        /*flex-grow:2;*/
+        width: 80px;        
+    }
+
+    .menuresponsive{
+        display: none;
+    }
+    .miniaturas{
+        display: none;
+    }
+    .bienvenida{        
+        flex-direction: row;
+    }
+    /*menu no responsive*/
+    .menu{
+        align-self: flex-end;
+        flex-basis: auto;
+        display: flex;
+        flex-flow: row nowrap;        
+        justify-content: flex-end;
+        list-style-type: none;
+        font-family: 'Tillana';
+    }
+    .menu ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;    
+        width: auto;
+        overflow: hidden;
+    }
+    .menu-enlace{
+        text-decoration: none;
+        color: white;
+        padding: 5px 5px 0px 5px;
+        display: inline-block;
+    }
+    
+    li:hover{
+        background-color: white;
+    }
+    .menu-enlace:hover{
+        color: black;
+        font-style: italic;
+    }
+    
+    .seleccionado{
+        color: black;
+        background-color: white;
+        font-style: italic;
+    }
+    /*fin menu no responsive*/
+    h1{
+        font-size: 6em;
+        
+        padding: 20px; 
+    }
+    h2{
+        font-size: 3em;
+        
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    p{        
+        font-size: 1.2em;
+        padding: 10px;
+        line-height: 2;
+    }
+    .resumen-trabajo{
+        display: flex;        
+        flex: 1;       
+        padding: 50px;
+        display: block;        
+        
+    }
+    
+    .contenedor-contacto{
+        flex-flow: row wrap;
+    }
+    .general{
+        padding: 20px;
+    }
+    .caja-formulario:last-child{
+        align-self: flex-end;
+    }
+}
+
+@media only screen and (min-width:1200px){
+ 
+    .contenedor-contacto{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .contenedor-formulario-contacto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .general:first-child{
+        flex-grow: 2;
+        flex-wrap: nowrap;
+    }
+    .caja-formulario{
+        flex-wrap: wrap;        
+    }
+    
+    .caja-formulario{
+        justify-content: center;
+    }
+    .bienvenida{        
+        flex-direction: row;
+    }
+    .contenedor-galeria{
+        flex-direction: row;
+    }
+    .img-galeria{
+        width: 30%;
+    }
+    .imagenGaleria{
+        width: 60%;
+    }
+    
+}
+    
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="css/css-reset.css">
+    <link rel="stylesheet" href="css/comun.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manuel Fernández Esteban">
+    <meta name="description" content="Portafolio de Manuel Fernández Esteban, 
+    podrán ver mi trabajo, como contactar conmigo y descargar una copia de mi currículum si lo desean">
+    <meta name="locality" content="Málaga, Costa del Sol, Andalucía, España, Europa">
+    <meta name="robots" content="index,follow">
+    <meta name="category" content="Spanish, Spain, Desarrollo web">
+    <title>Portfolio de Manuel Fernández Esteban</title>
+</head>
+
+<body onload="iniciar()">
+    <div class="contenedor-global">
+        <header>
+            <div class="caja-logo">
+                <a href="cuerpoInicio.html" title="home">
+                    <h1>MFE</h1>
+                </a>
+            </div>            
+            <nav class="menu">
+                <ul>
+                    <li><a class="menu-enlace seleccionado" href="cuerpoInicio.html" title="Home">Home</a></li>
+                    <li><a class="menu-enlace" href="cuerpoPortfolio.html" title="PortFolio">PortFolio</a></li>
+                    <li><a class="menu-enlace" href="cuerpoContacto.html"
+                            title="Datos de contacto y redes sociales">Contacto</a></li>
+                    <li><a class="menu-enlace" href="cuerpoPresupuesto.html" title="Pide un presupuesto">Presupuesto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menuresponsive">
+                <p id="opcion"></p>
+                <input type="checkbox">
+                <i class="barras"><img src="ico/001-menu.svg" alt="menu abrir"></i>
+                <i class="cruz"><img src="ico/002-cancel.svg" alt="menu cerrar"></i>
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="espacio"></div>
+                        </li>
+                        <li><a class="menu-enlace" href="cuerpoInicio.html" target="_self">Home</a></li>
+                        <li><a class="menu-enlace" href="cuerpoPortfolio.html" target="_self">Portfolio</a></li>
+                        <li><a class="menu-enlace" href="cuerpoContacto.html" target="_self">Contacto</a></li>
+                        <li><a class="menu-enlace" href="cuerpoPresupuesto.html" target="_self">Presupuesto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main">
+
+        </main>
+        <div class="caja-bienvenida">
+            <div class="pop-up">
+                <div class="bandaSuperior">                    
+                </div>
+                <div class="contenedor-popup">
+                    <div class="contenido-popup">
+                        <h3>Bienvenidos!</h3>
+                        <p>Gracias por visitar mi portfolio</p>
+                        <button id="boton-bienvenida" class="boton">Cerrar</button>
+                    </div>                    
+                    <h1 class="logo-bienvenida">MFE</h1>                    
+                </div>
+            </div>
+        </div>
+
+        
+        <footer>
+        <div class="caja-logo">
+            <a href="cuerpoInicio.html" title="home">
+                <h1 class="logo">MFE</h1>
+            </a>
+
+        </div>
+        <p class="blanco">Todos los derechos reservados. 2021</p>
+        </footer>
+
+
+</div>
+<script type="text/JavaScript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKM9W66UL5ENSfoAiajVbE4fRuhwXsgoU"></script>
+<script src="js/scripts.js"></script>
+<script src="js/eventos.js"></script>
+<script src="js/funcionesmapa.js"></script>
+<script src="js/calculopresupuesto.js"></script>
+<script src="js/eventos-galeria.js"></script>
+</body>
+
+
+</html>
