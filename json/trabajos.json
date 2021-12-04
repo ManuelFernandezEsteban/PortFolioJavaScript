@@ -74,6 +74,12 @@
                 "src": "img/screenshotOrderSummaryCard.png",
                 "titulo": "Card summary",
                 "descripcion": "Card maquetada con flexbox"
+            },
+            {
+                "id": 3,
+                "src": "img/screenshot-desktop-single-price-component.png",
+                "titulo": "Card single price",
+                "descripcion": "Card maquetada con flexbox"
             }
         ]
     }
