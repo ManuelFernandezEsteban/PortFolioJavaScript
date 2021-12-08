@@ -20,10 +20,12 @@
         if (tipo == PELUQUERIA) {
             descripcion.innerHTML = fotosPeluqueria[imagen.getAttribute('numero')].descripcion;
             encabezado.innerHTML = fotosPeluqueria[imagen.getAttribute('numero')].titulo;
+           
         } else if (tipo == OFFBEAT) {
             descripcion.innerHTML = fotosOffbeat[imagen.getAttribute('numero')].descripcion;
             encabezado.innerHTML = fotosOffbeat[imagen.getAttribute('numero')].titulo;
-        } else{
+            
+        } else if (tipo==COMPONENTES){
             descripcion.innerHTML = fotosComponentes[imagen.getAttribute('numero')].descripcion;
             encabezado.innerHTML = fotosComponentes[imagen.getAttribute('numero')].titulo;
         }
